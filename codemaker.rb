@@ -6,6 +6,10 @@ class Codemaker
   end
 
   def random_code(length)
-
+    code = ""
+    length.times do
+      code += Game_Rules.colors.sample 
+    end
+    return code
   end
 end

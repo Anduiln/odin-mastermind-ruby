@@ -1,4 +1,6 @@
 require_relative "game_rules"
+require_relative "codemaker"
+require_relative "codebreaker"
 
 #puts rules
 
