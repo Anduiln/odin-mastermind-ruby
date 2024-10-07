@@ -2,7 +2,7 @@ require_relative "game_rules"
 
 class Codebreaker
   def initialize()
-    @results = Array.new(4, nil)
+    @results = Array.new(Game_Rules.code_length, nil)
     @guess = ""
   end
 

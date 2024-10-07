@@ -1,4 +1,7 @@
-CODE_LENGTH = 4
-TURN_NUMBER = 10
-COLORS = [G, B, Y, P, O, M]
-COLOR_FULL = [Green, Blue, Yellow, Purple, Orange, Maroon]
+class Game_Rules
+  @code_length = 4
+  @turn_number = 10
+  @colors = [G, B, Y, P, O, M]
+  @colors_full = [Green, Blue, Yellow, Purple, Orange, Maroon]
+end
+
