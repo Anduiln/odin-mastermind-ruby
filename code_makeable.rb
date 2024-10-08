@@ -1,7 +1,7 @@
 module Code_Makeable
   def make_code()
     code = ""
-    until code.length == 4 && valid_colors?(code)
+    until code.length == GameRules.code_length && valid_colors?(code)
       code = gets.chomp.upcase
     end
     return code
@@ -15,5 +15,13 @@ module Code_Makeable
     end
 
     return true
+  end
+
+  def random_code(length)
+    code = ""
+    length.times do
+      code += GameRules.colors.sample 
+    end
+    return code
   end
 end
