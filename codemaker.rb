@@ -3,8 +3,12 @@ require_relative "game_rules"
 class Codemaker
   attr_reader :code
 
-  def initialize()
-    @code = random_code(GameRules.code_length)
+  def initialize(player_role)
+    if player_role == :breaker
+      @code = random_code(GameRules.code_length)
+    else
+      
+    end
   end
 
   def random_code(length)

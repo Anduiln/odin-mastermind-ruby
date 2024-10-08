@@ -1,9 +1,10 @@
-module Guessable
-  def make_guess()
-    self.guess = ""
-    until self.guess.length == 4 && valid_colors?(self.guess)
-      self.guess = gets.chomp.upcase
+module Code_Makeable
+  def make_code()
+    code = ""
+    until code.length == 4 && valid_colors?(code)
+      code = gets.chomp.upcase
     end
+    return code
   end
 
   def valid_colors?(string)
