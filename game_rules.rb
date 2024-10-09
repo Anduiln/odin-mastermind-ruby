@@ -16,5 +16,16 @@ class GameRules
   def self.colors_full
     @@colors_full
   end
+
+  def self.code_length=(number)
+    @@code_length = number
+  end
+  def self.turn_number=(number)
+    @@turn_number = number
+  end
+  def self.colors_full=(array)
+    @@colors_full = array
+    @@colors = @@colors_full.map { |c| c[0] }
+  end
 end
 
