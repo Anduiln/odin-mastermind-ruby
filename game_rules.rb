@@ -1,8 +1,8 @@
 class GameRules
   @@code_length = 4
   @@turn_number = 10
-  @@colors = ["G", "B", "Y", "P", "O", "M"]
   @@colors_full = ["Green", "Blue", "Yellow", "Purple", "Orange", "Maroon"]
+  @@colors = @@colors_full.map { |c| c[0] }
 
   def self.code_length
     @@code_length
