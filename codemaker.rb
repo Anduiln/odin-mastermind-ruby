@@ -1,8 +1,8 @@
 require_relative "game_rules"
-require_relative "code_makeable"
+require_relative "createable"
 
 class Codemaker
-  include Code_Makeable
+  include Createable
 
   attr_reader :code
 

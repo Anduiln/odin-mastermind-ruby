@@ -1,4 +1,6 @@
-module Code_Makeable
+# will need GameRules
+
+module Createable
   def make_code()
     code = ""
     until code.length == GameRules.code_length && valid_colors?(code)

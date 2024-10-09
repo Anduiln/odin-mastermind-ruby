@@ -27,7 +27,7 @@ puts "..."
 
 # Break code
 puts "The codemaker has decided on a code. Input your guess as initials, e.g. \"YGYB\"." if player == "breaker"
-breaker = Codebreaker.new
+breaker = Codebreaker.new(player)
 turn = 0
 winner = "codebreaker"
 
